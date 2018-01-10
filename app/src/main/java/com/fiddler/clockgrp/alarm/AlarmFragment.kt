@@ -14,6 +14,7 @@ import android.widget.Toast
 import com.fiddler.clockgrp.R
 import com.fiddler.clockgrp.util.CustomDatePickerDialog
 import com.fiddler.clockgrp.util.CustomDatePickerDialog.CustomDatePickerDialogCallback
+import com.fiddler.clockgrp.util.SharedPref
 import kotlinx.android.synthetic.main.alarm_layout.*
 import java.util.*
 
@@ -34,8 +35,6 @@ class AlarmFragmnet : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val rootView = inflater?.inflate(R.layout.alarm_layout, container, false)
-
-
 
         return rootView;
     }
@@ -67,6 +66,7 @@ class AlarmFragmnet : Fragment() {
         picker.show()
 
         Toast.makeText(activity, "Set Alarm Clicked", Toast.LENGTH_SHORT).show();
+
     }
 
 
